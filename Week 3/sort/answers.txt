@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: Bubble sort has a  running time of n^2 in the worst case and n in the best case. In both the random and reversed list, bubble sort runs much slower than selection sort because bubble sort has more swapping than selection sort, while in the sorted list, bubble sort runs much faster. This is because, in a sorted list, bubble sort does less work than selection sort in which selection sort will still compare with the whole list while bubble sort only compares with the next item.
+
+sort2 uses: Merge Sort
+
+How do you know?: Merge Sort is much faster compared to Bubble and Selection Sort with a running time of n log n in both worst case and best case. Even if the list is already sorted it will still run much faster than bubble and selection.
+
+sort3 uses: Selection Sort
+
+How do you know?: Selection sort has a running time of n^2 in the worst case and best case. Selection sort is much faster than bubble sort in a random and reversed list because less swapping is required. While in the sorted list, bubble sort runs much faster because bubble sort will only compare with the next item while selection sort will still compare with the whole list.
