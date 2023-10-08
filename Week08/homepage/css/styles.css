@@ -1,0 +1,443 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+
+body, html {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  background: #000;
+}
+
+main.parent-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+section.homepage-section {
+  border-radius: 0.5rem;
+}
+
+section#aboutMe {
+  min-height: 100vh;
+  display: flex;
+  padding: 4rem 5rem;
+  background-image: url("../images/background.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section#aboutMe div.profile-container {
+  background: #000000ff;
+  border-radius: 0.5rem;
+  padding: 5rem;
+  border: 1px solid #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  section#aboutMe div.profile-container {
+    padding: 3rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  section#aboutMe div.profile-container {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  section#aboutMe div.profile-container {
+    padding: 1rem;
+  }
+}
+
+section#aboutMe div.row {
+  display: flex;
+}
+
+@media screen and (max-width: 1450px) {
+  section#aboutMe div.row {
+    flex-direction: column;
+  }
+}
+
+section#aboutMe div.description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+section#aboutMe div.description-container h2.section-title {
+  text-align: left;
+}
+
+@media screen and (max-width: 1450px) {
+  section#aboutMe div.description-container {
+    margin-bottom: 2rem;
+  }
+  section#aboutMe div.description-container h2.section-title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  section#aboutMe div.description-container {
+    margin-bottom: 0;
+  }
+}
+
+section#aboutMe div.profile-description-container {
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: #080808;
+  min-height: 250px;
+}
+
+section#aboutMe div.profile-description-container p {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+section#aboutMe div.profile-description-container span.profile-name {
+  color: #8EE3F7;
+  transition: ease-out 0.4s color;
+}
+
+@media screen and (max-width: 1450px) {
+  section#aboutMe div.profile-description-container {
+    min-height: 180px;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  section#aboutMe div.profile-description-container {
+    min-height: 120px;
+    padding: 1rem;
+  }
+  section#aboutMe div.profile-description-container p {
+    font-size: 1.2rem;
+  }
+}
+
+section#aboutMe div.profile-links-container {
+  display: flex;
+  margin-top: 2.4rem;
+  width: 100%;
+  justify-content: center;
+}
+
+section#aboutMe div.profile-links-container a.social-link {
+  margin: 0 20px;
+  color: #ffffffe9;
+  font-size: 3.2rem;
+  min-width: 80px;
+  text-align: center;
+  border-radius: 0.3rem;
+  transition: ease-out 0.2s background-color, ease-out 0.2s color;
+}
+
+section#aboutMe div.profile-links-container a.social-link:hover {
+  background-color: #ffffffe9;
+  color: #000;
+}
+
+@media screen and (max-width: 1450px) {
+  section#aboutMe div.profile-links-container {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  section#aboutMe div.profile-links-container a.social-link {
+    width: 100%;
+    font-size: 2.5rem;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section#aboutMe div.profile-links-container {
+    display: none;
+  }
+}
+
+section#aboutMe div.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section#aboutMe div.image-container div.img-thumbnail-container {
+  width: 500px;
+}
+
+section#aboutMe div.image-container div.img-thumbnail-container img.img-thumbnail {
+  padding: 0;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  section#aboutMe div.image-container {
+    margin-top: 1rem;
+    align-items: start;
+  }
+  section#aboutMe div.image-container div.img-thumbnail-container {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  section#aboutMe div.image-container div.img-thumbnail-container {
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  section#aboutMe {
+    padding: 2rem 2.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section#aboutMe {
+    padding: 1rem;
+  }
+}
+
+section#aboutMeProjects {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 6rem 0;
+}
+
+section#aboutMeProjects h2.section-title {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 6rem;
+}
+
+@media screen and (max-width: 1450px) {
+  section#aboutMeProjects h2.section-title {
+    font-size: 2.6rem;
+    margin-bottom: 4rem;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  section#aboutMeProjects h2.section-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  section#aboutMeProjects h2.section-title {
+    font-size: 1.3rem;
+  }
+}
+
+section#aboutMeProjects h4.project-title {
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1450px) {
+  section#aboutMeProjects h4.project-title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section#aboutMeProjects h4.project-title {
+    font-size: 1.5rem;
+  }
+}
+
+section#aboutMeProjects span.more-projects-span {
+  display: block;
+  text-align: center;
+  margin-top: 4rem;
+  color: #fff;
+  font-size: 1.7rem;
+}
+
+section#aboutMeProjects span.more-projects-span a {
+  text-decoration: none;
+  color: #fe3131;
+  animation: infinite linear 8s span-animation;
+}
+
+@keyframes span-animation {
+  0% {
+    color: #fe3131;
+  }
+  15% {
+    color: #fee631;
+  }
+  30% {
+    color: #31a9fe;
+  }
+  45% {
+    color: #31fe53;
+  }
+  60% {
+    color: #31fe53;
+  }
+  75% {
+    color: #31a9fe;
+  }
+  90% {
+    color: #fee631;
+  }
+  100% {
+    color: #fe3131;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  section#aboutMeProjects span.more-projects-span {
+    font-size: 1.2rem;
+  }
+}
+
+section#aboutMeProjects div.projects-container {
+  color: #fff;
+}
+
+section#aboutMeProjects div#projectsCarousel {
+  width: 1080px;
+  height: 675px;
+  border-radius: 0.5rem;
+}
+
+section#aboutMeProjects div#projectsCarousel div.carousel-inner {
+  display: flex;
+  height: 100%;
+}
+
+section#aboutMeProjects div#projectsCarousel div.carousel-inner img {
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1450px) {
+  section#aboutMeProjects div#projectsCarousel {
+    width: 880px;
+    height: 550px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  section#aboutMeProjects div#projectsCarousel {
+    width: 680px;
+    height: 425px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  section#aboutMeProjects div#projectsCarousel {
+    width: 480px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  section#aboutMeProjects div#projectsCarousel {
+    width: 340px;
+    height: 213px;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  section#aboutMeProjects {
+    padding: 4rem 0;
+  }
+}
+
+section#aboutMeHobbies {
+  display: flex;
+  align-items: center;
+  background-image: url("../images/background.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+section#aboutMeHobbies h2.section-title {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 6rem;
+}
+
+section#aboutMeHobbies div.links-container {
+  background: #000000;
+  border-radius: 0.5rem;
+  padding: 2rem 0;
+  height: 80vh;
+  border: 1px solid #fff;
+  overflow: auto;
+}
+
+section#aboutMeHobbies div.ranking-link-container {
+  width: 320px;
+  text-align: center;
+  border-radius: 0.32rem;
+  margin-bottom: 1.75rem;
+  cursor: pointer;
+  transition: 0.3s background-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section#aboutMeHobbies div.ranking-link-container a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #000;
+  padding: 1.2rem 0;
+  font-size: 1.8rem;
+  text-decoration: none;
+  transition: 0.3s color;
+}
+
+@media screen and (max-width: 780px) {
+  section#aboutMeHobbies div.ranking-link-container {
+    width: 240px;
+  }
+  section#aboutMeHobbies div.ranking-link-container a {
+    font-size: 1.4rem;
+  }
+}
+
+section#aboutMeHobbies div.r-anime {
+  background: linear-gradient(90deg, #43eff8 0%, #69a4fc 100%);
+  color: #000;
+  border: 1px solid #21adff;
+}
+
+section#aboutMeHobbies div.r-movies {
+  background: linear-gradient(90deg, #f84a4a 0%, #e40000 100%);
+  color: #000;
+  border: 1px solid #fe3131;
+}
+
+section#aboutMeHobbies div.r-games {
+  background: linear-gradient(90deg, #43f867 0%, #00a900 100%);
+  color: #000;
+  border: 1px solid #2afa23;
+}
+/*# sourceMappingURL=styles.css.map */

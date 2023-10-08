@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>Who is the 1st President of the Philippines?</h3>
+                <span class="result-text-q1"></span>
+                <div class="answer-div">
+                    <button type="button" class="option-btn" onClick="checkQ1('Manuel Roxas', this)">Manuel Roxas</button>
+                    <button type="button" class="option-btn" onClick="checkQ1('Emilio Aguinaldo', this)">Emilio Aguinaldo</button>
+                    <button type="button" class="option-btn" onClick="checkQ1('Andres Bonifacio', this)">Andres Bonifacio</button>
+                    <button type="button" class="option-btn" onClick="checkQ1('Jose P. Laurel', this)">Jose P. Laurel</button>
+                </div>
+            </div>
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>How long did Spain colonize the Philippines?</h3>
+                <span class="result-text-q2"></span>
+                <div class="answer-div" data-question-id="2">
+                    <input type="text" class="response-input" id="q2AnswerInput" />
+                    <button type="button" class="check-btn" id="q2AnswerBtn" onClick="checkQ2()">Check Answer</button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const answerKeys = {
+                "1": "Emilio Aguinaldo",
+                "2": "333",
+            };
+
+            function checkQ1(ans, el) {
+                let correctAnswer = answerKeys["1"];
+                const resultSpan = document.querySelector(".result-text-q1");
+                if (ans === correctAnswer) {
+                    el.style.backgroundColor = "#0f0";
+                    resultSpan.textContent = "Correct!";
+                } else {
+                    el.style.backgroundColor = "#f00";
+                    resultSpan.textContent = "Incorrect";
+                }
+            }
+
+            function checkQ2() {
+                let correctAnswer = answerKeys["2"];
+                let userAnswer = document.querySelector("#q2AnswerInput").value;
+                const resultSpan = document.querySelector(".result-text-q2");
+                if (userAnswer === correctAnswer) {
+                    document.querySelector("#q2AnswerInput").style.backgroundColor = "#0f0";
+                    resultSpan.textContent = "Correct!";
+                } else {
+                    document.querySelector("#q2AnswerInput").style.backgroundColor = "#f00";
+                    resultSpan.textContent = "Incorrect";
+                }
+            }
+        </script>
+    </body>
+
+</html>

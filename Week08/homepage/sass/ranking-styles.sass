@@ -1,0 +1,204 @@
+$anime-color: #21adff
+$movies-color: #fe3131
+$games-color: #2afa23
+$ff-bebas-nue: 'Bebas Nue', sans-serif
+$ff-noto-sans-jp: 'Noto Sans JP', sans-serif    
+
+
+*, ::before, ::after
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body, html
+    width: 100%
+    height: 100vh
+    overflow-x: hidden
+    background: #000
+
+div.parent-container
+    margin: 0
+    color: #fff
+    position: relative
+
+    span.home-btn
+        display: block
+        position: absolute
+        margin: 10px
+
+        a
+            color: #fff
+            text-decoration: none
+            font-size: 2.4rem
+
+            @media screen and (max-width: 1400px)
+                font-size: 2rem
+            @media screen and (max-width: 1000px)
+                font-size: 1.5rem
+            @media screen and (max-width: 800px)
+                font-size: 1rem
+            @media screen and (max-width: 600px)
+                font-size: 0.8rem
+        
+        @media screen and (max-width: 600px)
+            margin: 1.333px
+
+    header.ranking-header
+        padding: 4rem
+        margin-bottom: 2rem
+        border-bottom: 1px solid #fff
+
+        h1.header-title 
+            text-align: center
+
+        span.header-span
+            &.anime
+                color: $anime-color
+            &.movies
+                color: $movies-color
+            &.games
+                color: $games-color
+        
+        @media screen and (max-width: 800px)
+            padding: 2rem
+        @media screen and (max-width: 600px)
+            padding: 1.5rem
+    
+    section.rank-section
+        margin-top: 4rem
+        width: 1600px
+        height: 600px
+
+        div
+            &.art-cover-container
+                display: flex
+                align-items: center
+
+                img
+                    width: 400px
+                    border-radius: 0.3rem
+
+                    @media screen and (max-width: 1400px)
+                        width: 320px
+                    @media screen and (max-width: 1000px)
+                        width: 240px
+                    @media screen and (max-width: 800px)
+                        width: 160px
+                    @media screen and (max-width: 600px)
+                        width: 120px
+            
+            &.description-container
+                padding: 0 2rem
+
+                h2.description-title
+                    font:
+                        family: $ff-bebas-nue
+                        size: 3rem
+                    margin-bottom: 1rem
+                    overflow: auto
+
+                    span.highlight
+                        &.anime
+                            color: $anime-color
+                        &.movies
+                            color: $movies-color
+                        &.games
+                            color: $games-color
+
+                    @media screen and (max-width: 1200px)
+                        font-size: 2.4rem
+                    @media screen and (max-width: 1000px)
+                        font-size: 1.8rem
+                        margin-bottom: 0.8rem
+                    @media screen and (max-width: 800px)
+                        font-size: 1.4rem
+                        margin-bottom: 0.5rem
+                    @media screen and (max-width: 600px)
+                        font-size: 1rem
+                        margin-bottom: 0.2rem
+
+                p.description
+                    text-align: justify
+                    height: 80%
+                    overflow: auto
+                    font: 
+                        family: $ff-noto-sans-jp
+                        size: 1.5rem
+                    
+                    @media screen and (max-width: 1600px)
+                        font-size: 1.25rem
+                    @media screen and (max-width: 1400px)
+                        font-size: 1.1rem
+                    @media screen and (max-width: 1000px)
+                        font-size: 1rem
+                    @media screen and (max-width: 800px)
+                        font-size: 0.9rem
+                    @media screen and (max-width: 600px)
+                        font-size: 0.6rem
+
+        @media screen and (max-width: 1600px)
+            width: 1400px
+        @media screen and (max-width: 1400px)
+            width: 1000px
+            height: 460px
+        @media screen and (max-width: 1000px)
+            width: 800px
+            height: 360px
+            margin-top: 2.5rem
+
+            div
+                &.description-container
+                    padding: 0 1.4rem        
+        @media screen and (max-width: 800px)
+            width: 600px
+            height: 240px
+            margin-top: 2rem
+        @media screen and (max-width: 600px)
+            width: 400px
+            height: 180px
+
+            div
+                &.description-container
+                    padding: 0 0.7rem
+
+    div.see-more-container
+        margin-top: 4rem
+        border-top: 1px solid #fff
+        padding: 4rem
+
+        div.more-content
+            img
+                width: 50px
+                border-radius: 0.3rem
+
+
+            span.more-content-span
+                margin-left: 15px
+                font:
+                    family: $ff-noto-sans-jp
+                    size: 1.5rem
+                
+                a
+                    text-decoration: none
+                    color: $anime-color
+
+                
+        @media screen and (max-width: 800px)
+            margin-top: 2rem
+            padding: 2rem
+
+            div.more-content
+                img
+                    width: 35px
+                span.more-content-span
+                    margin-left: 10px
+                    font-size: 1rem
+        @media screen and (max-width: 600px)
+            padding: 1.5rem
+
+            div.more-content
+                img
+                    width: 25px
+                span.more-content-span
+                    margin-left: 7px
+                    font-size: 0.8rem

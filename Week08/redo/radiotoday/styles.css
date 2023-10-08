@@ -1,0 +1,109 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: Helvetica, Arial, sans-serif;
+    background: #000 !important;
+}
+
+div.parent-container {
+    padding: 0;
+}
+
+nav.navbar {
+    background: #fff;
+    width: 100%;
+    padding: 0 15px;
+}
+
+div.container-fluid {
+    align-items: stretch;
+    height: 100%;
+}
+
+nav.navbar a.navbar-brand img {
+    width: 270px;
+}
+
+nav.navbar ul.navbar-nav {
+    margin-left: 60px;
+    height: 80px;
+    display: flex;
+    align-items: stretch;
+}
+
+nav.navbar li.nav-item {
+    min-width: 120px;
+    padding: 0 10px;
+    font-size: 1.3rem;
+}
+
+nav.navbar li.nav-item a {
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+nav.navbar li.nav-item:hover {
+    background-color: #EE1F29;
+}
+
+
+div.body-container {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0.8rem;
+    height: 800px;
+}
+
+div.body-container div.sidebar-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+}
+
+div.body-container div.sidebar-right {
+    display: flex;
+    flex-direction: column;
+    padding: 0 4rem;
+    margin-top: -40px;
+    flex: 1;
+    justify-content: center;
+}
+
+div.sidebar-right p {
+    font-size: 1.3rem;
+    color: #fff;
+    text-align: justify;
+}
+
+div.sidebar-right img {
+    width: 150px;
+    align-self: end;
+}
+
+div.sidebar-left h2.sidebar-left-title {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    font-size: 4.4rem;
+    color: #fff;
+    text-align: center;
+}
+
+div#carousel {
+    width: 700px;
+}
+
+div#carousel img {
+    border-radius: 0.3rem;
+}
