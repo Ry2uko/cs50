@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy
+{% endblock%}
+
+{% block main %}
+    <div class="buy-container container-lg">
+        <form action="/buy" method="post">
+            <input autocomplete="off" autofocus type="text" name="symbol" id="symbol" placeholder="Symbol" />
+            <input type="number" name="shares" id="shares" placeholder="Shares" min="1" />
+            <button type="submit" class="btn btn-primary">Buy</button>
+        </form>
+    </div>
+{% endblock %}

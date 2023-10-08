@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <div class="container-lg quote-container">
+        <form action="/quote" method="post">
+            <input autocomplete="off" autofocus type="text" name="symbol" placeholder="Symbol" id="symbol"/>
+            <button class="btn btn-primary rounded" type="submit">Lookup</button>
+        </form>
+    </div>
+{% endblock %}
